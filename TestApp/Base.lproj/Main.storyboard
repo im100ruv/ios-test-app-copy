@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sE7-n1-JJa">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UD-t4-JpJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
@@ -153,23 +153,17 @@
                                             <constraint firstAttribute="trailing" secondItem="0UD-t4-JpJ" secondAttribute="trailing" id="ZlU-qb-M8d"/>
                                             <constraint firstItem="gcc-KE-Zdc" firstAttribute="leading" secondItem="sE7-n1-JJa" secondAttribute="leading" constant="60" id="c5N-Ay-6aB"/>
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gcc-KE-Zdc" secondAttribute="trailing" constant="100" id="cFP-jI-R98"/>
+                                            <constraint firstAttribute="bottom" secondItem="O7m-KT-0dV" secondAttribute="bottom" constant="80" id="gAD-8k-eGp"/>
                                             <constraint firstAttribute="trailing" secondItem="GG5-Za-pX5" secondAttribute="trailing" constant="60" id="mUa-Y8-ai4"/>
-                                            <constraint firstAttribute="height" constant="667" id="mbM-0o-Ndb"/>
                                             <constraint firstItem="gcc-KE-Zdc" firstAttribute="top" secondItem="sE7-n1-JJa" secondAttribute="top" constant="115" id="tNG-sX-rkd"/>
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gcc-KE-Zdc" secondAttribute="trailing" constant="60" id="tVX-l8-waH"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="mbM-0o-Ndb"/>
                                                 <exclude reference="Aq3-yt-k9w"/>
                                                 <exclude reference="cFP-jI-R98"/>
                                                 <exclude reference="2PA-C5-yhg"/>
                                                 <exclude reference="5hV-gO-aQe"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="mbM-0o-Ndb"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -196,7 +190,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sE7-n1-JJa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="7RC-2E-oSV"/>
                             <constraint firstItem="EBX-rq-JDz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="If9-8h-tJU"/>
                             <constraint firstItem="sE7-n1-JJa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="MCX-0o-eoo"/>
                             <constraint firstItem="EBX-rq-JDz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S6h-dC-A0k"/>
@@ -204,16 +197,35 @@
                             <constraint firstItem="EBX-rq-JDz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a79-eo-cYT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <exclude reference="7RC-2E-oSV"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y3j-yV-dW8">
+            <objects>
+                <viewController id="agZ-Vo-Z96" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iYd-jC-6of">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="//&quot;view&quot; under a scroll view is not necessary.   Just fix the bottom space for the last item i.e. signup button here." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWR-HS-ATN">
+                                <rect key="frame" x="16" y="38" width="343" height="437"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yky-nu-L3K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04Y-IB-a91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="-56.221889055472268"/>
         </scene>
     </scenes>
 </document>
